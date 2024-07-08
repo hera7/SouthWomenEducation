@@ -1,0 +1,44 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header .logo_section {
+  position: fixed;
+  top: 13px;
+  left: 30px;
+}
+.header .menu {
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  color: white;
+}
+.header .menu ul li {
+  display: inline-block;
+  color: white;
+  mix-blend-mode: difference;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.main {
+  background-image: url(./img/back.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  font-size: 15vw;
+  font-weight: 500;
+  line-height: 100vh;
+  text-align: center;
+  mix-blend-mode: difference;
+}/*# sourceMappingURL=day5.css.map */

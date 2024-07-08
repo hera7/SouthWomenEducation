@@ -1,0 +1,81 @@
+body {
+  font-family: "Inter", "Noto Sans KR", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.header .menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.header .menu li {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.header .mobile_menu {
+  display: none;
+}
+
+.main_copy {
+  padding-top: 170px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.main_copy .main_copy_content {
+  font-size: 5VW;
+  font-weight: 500;
+  line-height: 5VW;
+}
+
+.business_info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-top: 124px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.business_info .bi_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 87px;
+}
+.img {
+  background-image: url("./img/back_somc.jpg");
+  background-size: cover;
+  height: 1000px;
+  margin-top: 16px;
+  padding-top: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.img .img_content {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+  width: 510px;
+}
+.img .arrow img {
+  display: none;
+}/*# sourceMappingURL=day6.css.map */

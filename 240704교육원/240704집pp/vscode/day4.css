@@ -1,0 +1,49 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.section1 {
+    background-color: #272782;
+    height: 100vh;
+}
+
+.logo_section img {
+    position: fixed;
+    top: 30px;
+    left: 50px;
+}
+
+.log_in_join {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    color: white;
+}
+
+.title {
+    
+    color: white;
+    font-size: 10vw;
+    font-weight: 700;
+    text-align: center;
+    line-height: 100vh;
+    text-transform: uppercase;
+}
+
+.section2 {
+    height: 100vh;
+    position: relative;
+}
+
+.section2 .circle {
+    width: 500px;
+    height: 500px;
+    background-color: #1E1E1E;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+
+}

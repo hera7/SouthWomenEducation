@@ -1,0 +1,75 @@
+@media (max-width: 900px) {
+    .header{
+        padding-top: 11px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        .logo_section{
+            img{
+                width: 66px;
+            }
+        }
+        .menu{
+            display: none;
+        }
+        .mobile_menu{
+            display: block;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 21px;
+        }
+    }
+    
+    .main_copy{
+        padding-top: 103px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        .main_copy_content{
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 22px;
+        }
+    }
+    
+    .business_info{
+        margin-top: 33px;
+        font-size: 15px;
+        font-weight: 500;
+        padding-left: 15px;
+        padding-right: 9px;
+        box-sizing: border-box;
+        
+        .bi_title{
+    
+    
+        }
+        .bi_content{
+            gap: 18px;
+        }
+    }
+    .img{
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        
+        .img_content{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 19px;
+            width: 360px;
+        }
+        .arrow{
+            position: fixed;
+            bottom: 19px;
+            left: calc(50% - 17.5px );
+            img{
+                display: block;
+                
+            }
+            
+        }
+    }
+  }
+
