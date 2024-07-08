@@ -112,8 +112,8 @@
     width: 90px;
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item .rc_img_section {
-    width: 90px;
-    height: 79px;
+    width: 61px;
+    height: 40px;
     border-radius: 20px;
     border: 2px solid #E8E8E8;
     display: flex;
@@ -123,38 +123,41 @@
     background-color: #fff;
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item .rc_img_section .rc_img {
-    width: 55px;
-    height: 41px;
+    width: 34px;
+    height: 26px;
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item .rc_img_section .rc_img img {
     width: 100%;
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item .rc_item_title {
-    margin-top: 16px;
+    margin-top: 3px;
     text-align: center;
+    font-size: 11px;
+    font-weight: 500;
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin {
-    width: 948px;
-    margin-top: 33px;
-    display: flex;
-    gap: 20px;
+    flex-direction: column;
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item {
-    width: 222.75px;
-    height: 344px;
+    width: 100%;
     background-color: #fff;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;
     border-radius: 10px;
+    margin-bottom: 10px;
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_selection_number {
     font-size: 15px;
     font-weight: 700;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_selection_img {
-    margin-top: 18px;
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_img_contents_container {
+    display: flex;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_img_contents_container .rc_selection_img {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -162,32 +165,33 @@
     flex-direction: column;
     height: 159PX;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_selection_img img {
-    width: 154px;
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_img_contents_container .rc_selection_img img {
+    width: 69px;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_selection_contents .rc_selection_contents_title {
-    font-size: 11px;
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_img_contents_container .rc_selection_contents .rc_selection_contents_title {
+    font-size: 14px;
     font-weight: 900;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_selection_contents .rc_selection_contents_content {
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_img_contents_container .rc_selection_contents .rc_selection_contents_content {
     margin-top: 11px;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 500;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_selection_contents .rc_selection_contents_price_section {
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_img_contents_container .rc_selection_contents .rc_selection_contents_price_section {
     margin-top: 11px;
     display: flex;
     gap: 5px;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_selection_contents .rc_selection_contents_price_section .rc_selection_contents_price_percent {
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_img_contents_container .rc_selection_contents .rc_selection_contents_price_section .rc_selection_contents_price_percent {
     font-size: 13px;
     font-weight: 500;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_selection_contents .rc_selection_contents_price_section .rc_selection_contents_price {
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item .rc_img_contents_container .rc_selection_contents .rc_selection_contents_price_section .rc_selection_contents_price {
     font-size: 13px;
     font-weight: 900;
   }
   .body_contents .recommend .recommend_section .recommend_selection .bar_section {
+    display: none;
     margin-top: 25px;
   }
   .body_contents .recommend .recommend_section .recommend_selection .bar_section .whole_bar {
@@ -201,6 +205,9 @@
     height: 8px;
     background-color: #8FD2EE;
     border-radius: 22px;
+  }
+  .body_contents .various_benefits {
+    display: none;
   }
   .body_contents .various_benefits .various_benefits_section {
     display: flex;
@@ -263,6 +270,7 @@
     border-radius: 22px;
   }
   .body_contents .Banner {
+    display: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,6 +285,7 @@
     border-radius: 20px;
   }
   .body_contents .Promotion {
+    display: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -356,6 +365,7 @@
     color: #FF0000;
   }
   .body_contents .LatestProductNews {
+    display: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -422,6 +432,7 @@
     border-radius: 22px;
   }
   .body_contents .customer_support_section {
+    display: none;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -41,7 +41,7 @@ li {
 
             .search_info {
                 // position: relative;
-                
+
                 font-size: 14px;
                 font-weight: 500;
                 color: #000;
@@ -52,6 +52,7 @@ li {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
                 input {
                     border: none;
                     // margin-top: 16px;
@@ -67,8 +68,8 @@ li {
                     // position: absolute;
                     // right: 25px;
                     // top: 10.88px;
-                   
-                    padding-right:25px;
+
+                    padding-right: 25px;
                     box-sizing: border-box;
 
                 }
@@ -112,6 +113,7 @@ li {
     position: relative;
     height: 700px;
     margin-top: 55px;
+
     .main_img_title_sectioin {
         width: 948px;
         color: #fff;
@@ -125,7 +127,7 @@ li {
             font-size: 38px;
             // font-size: 2em;
             font-weight: 700;
-            
+
         }
 
         .main_img_title_2 {
@@ -133,7 +135,7 @@ li {
             font-size: 24px;
             // font-size: 2em;
             font-weight: 600;
-            
+
         }
 
     }
@@ -148,7 +150,7 @@ li {
     }
 
     .main_img {
-        
+
         // width: 1436px;
         // background-size: cover;
         width: 100vw;
@@ -160,7 +162,8 @@ li {
 
         }
     }
-    .main_img_order_mobile{
+
+    .main_img_order_mobile {
         display: none;
     }
 }
@@ -190,6 +193,7 @@ li {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+
                     .more_watching {
                         font-size: 14px;
                         font-weight: 500;
@@ -232,6 +236,8 @@ li {
                         .rc_item_title {
                             margin-top: 16px;
                             text-align: center;
+                            font-size: 15px;
+                            font-weight: 500;
                         }
 
                     }
@@ -244,7 +250,7 @@ li {
                     gap: 20px;
 
                     .recommend_selection_item {
-                        width: 222.75px;
+                        width: 222px;
                         height: 344px;
                         background-color: #fff;
                         padding-top: 10px;
@@ -258,48 +264,50 @@ li {
                             font-weight: 700;
                         }
 
-                        .rc_selection_img {
-                            margin-top: 18px;
-                            width: 100%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            flex-direction: column;
-                            height: 159PX;
-
-                            img {
-                                width: 154px;
-                            }
-                        }
-
-                        .rc_selection_contents {
-
-                            .rc_selection_contents_title {
-                                font-size: 11px;
-                                font-weight: 900;
-                            }
-
-                            .rc_selection_contents_content {
-                                margin-top: 11px;
-                                font-size: 8px;
-                                font-weight: 500;
-                            }
-
-                            .rc_selection_contents_price_section {
-                                margin-top: 11px;
+                        .rc_img_contents_container {
+                            .rc_selection_img {
+                                margin-top: 18px;
+                                width: 100%;
                                 display: flex;
-                                gap: 5px;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                height: 159PX;
 
-                                .rc_selection_contents_price_percent {
+                                img {
+                                    width: 154px;
+                                }
+                            }
 
-                                    font-size: 13px;
+                            .rc_selection_contents {
+
+                                .rc_selection_contents_title {
+                                    font-size: 11px;
+                                    font-weight: 900;
+                                }
+
+                                .rc_selection_contents_content {
+                                    margin-top: 11px;
+                                    font-size: 8px;
                                     font-weight: 500;
                                 }
 
-                                .rc_selection_contents_price {
+                                .rc_selection_contents_price_section {
+                                    margin-top: 11px;
+                                    display: flex;
+                                    gap: 5px;
 
-                                    font-size: 13px;
-                                    font-weight: 900;
+                                    .rc_selection_contents_price_percent {
+
+                                        font-size: 13px;
+                                        font-weight: 500;
+                                    }
+
+                                    .rc_selection_contents_price {
+
+                                        font-size: 13px;
+                                        font-weight: 900;
+                                    }
                                 }
                             }
                         }
@@ -307,6 +315,7 @@ li {
                 }
 
                 .bar_section {
+                    display: block;
                     margin-top: 25px;
 
                     .whole_bar {
@@ -350,6 +359,7 @@ li {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+
                     .more_watching {
                         font-size: 14px;
                         font-weight: 500;
@@ -445,10 +455,11 @@ li {
 
             .promotion_title {
                 font-size: 21px;
-                    font-weight: 700;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
+                font-weight: 700;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
                 .more_watching {
                     font-size: 14px;
                     font-weight: 500;
@@ -553,6 +564,7 @@ li {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
                 .more_watching {
                     font-size: 14px;
                     font-weight: 500;
@@ -757,7 +769,7 @@ li {
                 margin-top: 16px;
                 display: flex;
                 gap: 39px;
-                
+
                 // padding-left: calc(474px - 286px); justify-content: center;를 사용할 수 없을 때 사용하는 거다.
 
             }
