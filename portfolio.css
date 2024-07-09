@@ -241,6 +241,9 @@ li {
   background-color: #8FD2EE;
   border-radius: 22px;
 }
+.body_contents .recommend .recommend_section .recommend_selection .rc_button_section .rc_btn_more {
+  display: none;
+}
 .body_contents .various_benefits .various_benefits_section {
   display: flex;
   justify-content: center;
@@ -264,22 +267,23 @@ li {
   display: flex;
   gap: 12px;
 }
-.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits__selection {
+.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection {
   margin-top: 40px;
   width: 948px;
   display: flex;
   justify-content: space-between;
   flex: 1;
 }
-.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits__selection .various_benefits_item .various_benefits_img_section {
+.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection .various_benefits_item .various_benefits_img_section {
   width: 303px;
   height: 139px;
   border-radius: 10px;
+  overflow: hidden;
 }
-.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits__selection .various_benefits_item .various_benefits_img_section img {
+.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection .various_benefits_item .various_benefits_img_section img {
   width: 100%;
 }
-.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits__selection .various_benefits_item .various_benefits_item_title {
+.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection .various_benefits_item .various_benefits_item_title {
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;

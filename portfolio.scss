@@ -335,7 +335,12 @@ li {
 
 
                 }
-
+                .rc_button_section{
+                    .rc_btn_more{
+                        display: none;
+                        
+                    }
+                }
             }
         }
 
@@ -369,7 +374,7 @@ li {
                     }
                 }
 
-                .various_benefits__selection {
+                .various_benefits_selection {
                     margin-top: 40px;
                     width: 948px;
                     display: flex;
@@ -381,7 +386,7 @@ li {
                             width: 303px;
                             height: 139px;
                             border-radius: 10px;
-
+                            overflow: hidden;
                             img {
                                 width: 100%;
                             }
