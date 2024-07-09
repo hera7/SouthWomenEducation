@@ -135,7 +135,7 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-.body_contents .recommend .recommend_section .recommend_selection .recommend_title .more_watching {
+.body_contents .recommend .recommend_section .recommend_selection .recommend_title .rc_more_watching {
   font-size: 14px;
   font-weight: 500;
   color: #989898;
@@ -410,21 +410,21 @@ li {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_title {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_title {
   font-size: 21px;
   font-weight: 700;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_title .more_watching {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_title .more_watching {
   font-size: 14px;
   font-weight: 500;
   color: #989898;
   display: flex;
   gap: 12px;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_items_section {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section {
   margin-top: 39px;
   display: flex;
   width: 948px;
@@ -432,34 +432,34 @@ li {
   padding-left: 240px;
   box-sizing: border-box;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_items_section .latest_product_news_item {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section .latest_product_news_item {
   width: 223px;
   height: 277px;
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_img img {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_img img {
   width: 100%;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_title {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_title {
   font-size: 16px;
   font-weight: 500;
   padding-top: 15px;
   display: flex;
   justify-content: center;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_bar_section {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_bar_section {
   margin-top: 40px;
   padding-left: 240px;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_bar_section .latest_product_whole_bar {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_bar_section .latest_product_whole_bar {
   width: 708px;
   height: 8px;
   background-color: #CFD8DC;
   border-radius: 22px;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_bar_section .latest_product_whole_bar .latest_product_selection_bar {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_bar_section .latest_product_whole_bar .latest_product_selection_bar {
   width: 222px;
   height: 8px;
   background-color: #8FD2EE;
@@ -469,6 +469,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 .body_contents .customer_support_section .customer_support_item {
   padding-top: 100px;
@@ -479,6 +480,13 @@ li {
 .body_contents .customer_support_section .customer_support_item .customer_support_section_title {
   font-size: 21px;
   font-weight: 700;
+}
+.body_contents .customer_support_section .customer_support_item .customer_support_section_title .more_watching {
+  font-size: 14px;
+  font-weight: 500;
+  color: #989898;
+  display: flex;
+  gap: 12px;
 }
 .body_contents .customer_support_section .customer_support_item .customer_support_section_information_section {
   font-size: 12px;

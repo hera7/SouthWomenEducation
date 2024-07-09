@@ -188,7 +188,7 @@ li {
                     justify-content: space-between;
                     align-items: center;
 
-                    .more_watching {
+                    .rc_more_watching {
                         font-size: 14px;
                         font-weight: 500;
                         color: #989898;
@@ -560,88 +560,87 @@ li {
 
         .latest_product_news_section {
 
-
-            .latest_product_news_title {
-                font-size: 21px;
-                font-weight: 700;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                .more_watching {
-                    font-size: 14px;
-                    font-weight: 500;
-                    color: #989898;
+            .latest_product_news_container{
+                .latest_product_news_title {
+                    font-size: 21px;
+                    font-weight: 700;
                     display: flex;
-                    gap: 12px;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .more_watching {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #989898;
+                        display: flex;
+                        gap: 12px;
+                    }
                 }
-            }
+
+                .latest_product_news_items_section {
+                    margin-top: 39px;
+                    display: flex;
+                    width: 948px;
+                    gap: 19px;
+                    padding-left: 240px;
+                    box-sizing: border-box;
 
 
 
-            .latest_product_news_items_section {
-                margin-top: 39px;
-                display: flex;
-                width: 948px;
-                gap: 19px;
-                padding-left: 240px;
-                box-sizing: border-box;
+                    .latest_product_news_item {
+                        width: 223px;
+                        height: 277px;
+                        background-color: #fff;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        // :nth-child(1){
+                        //     visibility:hidden;
+                        // }
 
 
 
-                .latest_product_news_item {
-                    width: 223px;
-                    height: 277px;
-                    background-color: #fff;
-                    border-radius: 10px;
-                    overflow: hidden;
-                    // :nth-child(1){
-                    //     visibility:hidden;
-                    // }
+                        .latest_product_news_item_img {
 
 
+                            // width: 100%;
+                            // height: 223px;
+                            
 
-                    .latest_product_news_item_img {
+                            img {
+                                width: 100%;
+                            }
+                        }
 
+                        .latest_product_news_item_title {
 
-                        // width: 100%;
-                        // height: 223px;
-                        
-
-                        img {
-                            width: 100%;
+                            font-size: 16px;
+                            font-weight: 500;
+                            // line-height: 16px;
+                            padding-top: 15px;
+                            // padding-left: 20.5px;
+                            display: flex;
+                            justify-content: center;
+                            
                         }
                     }
-
-                    .latest_product_news_item_title {
-
-                        font-size: 16px;
-                        font-weight: 500;
-                        // line-height: 16px;
-                        padding-top: 15px;
-                        // padding-left: 20.5px;
-                        display: flex;
-                        justify-content: center;
-                        
-                    }
                 }
-            }
 
-            .latest_product_bar_section {
-                margin-top: 40px;
-                padding-left: 240px;
+                .latest_product_bar_section {
+                    margin-top: 40px;
+                    padding-left: 240px;
 
-                .latest_product_whole_bar {
-                    width: 708px;
-                    height: 8px;
-                    background-color: #CFD8DC;
-                    border-radius: 22px;
-
-                    .latest_product_selection_bar {
-                        width: 222px;
+                    .latest_product_whole_bar {
+                        width: 708px;
                         height: 8px;
-                        background-color: #8FD2EE;
+                        background-color: #CFD8DC;
                         border-radius: 22px;
+
+                        .latest_product_selection_bar {
+                            width: 222px;
+                            height: 8px;
+                            background-color: #8FD2EE;
+                            border-radius: 22px;
+                        }
                     }
                 }
             }
@@ -649,10 +648,11 @@ li {
     }
 
     .customer_support_section {
+        
         display: flex;
         justify-content: center;
         align-items: center;
-
+        display: none;
         .customer_support_item {
             padding-top: 100px;
             padding-bottom: 163px;
@@ -662,6 +662,13 @@ li {
             .customer_support_section_title {
                 font-size: 21px;
                 font-weight: 700;
+                .more_watching {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #989898;
+                    display: flex;
+                    gap: 12px;
+                }
             }
 
             .customer_support_section_information_section {
