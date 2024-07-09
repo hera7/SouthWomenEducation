@@ -38,14 +38,14 @@
                     input {
                         border: none;
                         // padding-top: 16px;
-                        margin-left: 59px;
+                        margin-left: 49px;
                         box-sizing: border-box;
                     }
 
                     .glasses_section {
                         width: 45px;
                         height: 20px;
-
+                        padding-top: initial;
                         img {
                             width: 100%;
                         }
@@ -79,14 +79,14 @@
             left: 15px;
             width: initial;
             .main_img_title_1 {
-                font-size: 10px;
+                font-size: 13px;
                 font-weight: 800;
                 line-height: 10px;
             }
 
             .main_img_title_2 {
                 margin-top: 10px;
-                font-size: 11px;
+                font-size: 16px;
                 font-weight: 900;
                 line-height: 11px;
 
@@ -146,16 +146,13 @@
 
                     .recommend_title {
                         font-size: 17px;
-                        width: 100%;
-                        // display: flex;
-                        // justify-content: space-between;
-                        // align-items: center;
+                        // width: 100%;
+                        padding: 10px 10px 0px;
+
                         .more_watching {
                             font-size: 14px;
-                            // font-weight: 500;
-                            // color: #989898;
-                            // display: flex;
-                            // gap: 12px;
+                            gap: 5px;
+ 
                         }
                     }
 
@@ -163,8 +160,11 @@
                         display: flex;
                         width: 100%;
                         justify-content: space-between;
+                        
+                        // gap: 5px;
+                       
                         overflow: hidden;
-                        gap: 5px;
+                        display: none;
                         .rc_item {
                             width: 90px;
 
@@ -207,6 +207,7 @@
                         // gap: 20px;
                         flex-direction: column;
                         gap: initial;
+                        
                         .recommend_selection_item {
                             // width: 327px;
                             height: initial;
@@ -286,22 +287,19 @@
                         }
                     }
 
-                    .bar_section {
+                    .rc_bar_section {
                         display: none;
-                        margin-top: 25px;
+                        
 
-                        .whole_bar {
-                            width: 951px;
-                            height: 8px;
-                            background-color: #CFD8DC;
-                            border-radius: 22px;
+                        .rc_whole_bar {
+                            // width: initial;
+                            width: 100%;
+                           
 
-                            .selection_bar {
+                            .rc_selection_bar {
 
-                                width: 358px;
-                                height: 8px;
-                                background-color: #8FD2EE;
-                                border-radius: 22px;
+                                width: initial;
+                                
                             }
                         }
 
@@ -312,6 +310,7 @@
                         display: flex;
                         justify-content: center;
                         gap: 10px;
+                        
                         .rc_btn_more {
                             display: block;
                             height: 40px;
@@ -321,6 +320,11 @@
                             border: 1px solid #000;
                             border-radius: 30px;
                             font-weight: 700;
+                            background-color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 5px;
                         }
                     }
 
@@ -331,7 +335,7 @@
         }
 
         .various_benefits {
-           display: none;
+           
 
             .various_benefits_section {
                 width: 100%;
@@ -341,7 +345,7 @@
                     width: 100%;
                     .various_benefits_title {
                         font-size: 17px;
-
+                        padding: 10px 10px 0px;
                         .more_watching {
                         font-size: 13px;
                         font-weight: 500;
@@ -354,6 +358,7 @@
                     .various_benefits_selection {
                         width: 100%;
                         overflow: auto;
+                        gap: 10px;
 
                         .various_benefits_item {
                             .various_benefits_img_section {

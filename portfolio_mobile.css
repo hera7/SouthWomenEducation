@@ -29,12 +29,13 @@
   }
   .header .header_container .search_section .search_info input {
     border: none;
-    margin-left: 59px;
+    margin-left: 49px;
     box-sizing: border-box;
   }
   .header .header_container .search_section .search_info .glasses_section {
     width: 45px;
     height: 20px;
+    padding-top: initial;
   }
   .header .header_container .search_section .search_info .glasses_section img {
     width: 100%;
@@ -56,13 +57,13 @@
     width: initial;
   }
   .main_img_section .main_img_title_sectioin .main_img_title_1 {
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 800;
     line-height: 10px;
   }
   .main_img_section .main_img_title_sectioin .main_img_title_2 {
     margin-top: 10px;
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 900;
     line-height: 11px;
   }
@@ -101,17 +102,18 @@
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_title {
     font-size: 17px;
-    width: 100%;
+    padding: 10px 10px 0px;
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_title .more_watching {
     font-size: 14px;
+    gap: 5px;
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_menu {
     display: flex;
     width: 100%;
     justify-content: space-between;
     overflow: hidden;
-    gap: 5px;
+    display: none;
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item {
     width: 90px;
@@ -207,21 +209,14 @@
   .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .btn_more {
     display: block;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .bar_section {
+  .body_contents .recommend .recommend_section .recommend_selection .rc_bar_section {
     display: none;
-    margin-top: 25px;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .bar_section .whole_bar {
-    width: 951px;
-    height: 8px;
-    background-color: #CFD8DC;
-    border-radius: 22px;
+  .body_contents .recommend .recommend_section .recommend_selection .rc_bar_section .rc_whole_bar {
+    width: 100%;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .bar_section .whole_bar .selection_bar {
-    width: 358px;
-    height: 8px;
-    background-color: #8FD2EE;
-    border-radius: 22px;
+  .body_contents .recommend .recommend_section .recommend_selection .rc_bar_section .rc_whole_bar .rc_selection_bar {
+    width: initial;
   }
   .body_contents .recommend .recommend_section .recommend_selection .rc_button_section {
     display: flex;
@@ -237,9 +232,11 @@
     border: 1px solid #000;
     border-radius: 30px;
     font-weight: 700;
-  }
-  .body_contents .various_benefits {
-    display: none;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
   }
   .body_contents .various_benefits .various_benefits_section {
     width: 100%;
@@ -251,6 +248,7 @@
   }
   .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_title {
     font-size: 17px;
+    padding: 10px 10px 0px;
   }
   .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_title .more_watching {
     font-size: 13px;
@@ -262,6 +260,7 @@
   .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection {
     width: 100%;
     overflow: auto;
+    gap: 10px;
   }
   .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection .various_benefits_item .various_benefits_img_section img {
     width: 100%;
