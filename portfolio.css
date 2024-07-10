@@ -142,15 +142,15 @@ li {
   display: flex;
   gap: 12px;
 }
-.body_contents .recommend .recommend_section .recommend_selection .recommend_menu {
+.body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container .recommend_menu {
   display: flex;
   width: 948px;
   justify-content: space-between;
 }
-.body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item {
+.body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container .recommend_menu .rc_item {
   width: 90px;
 }
-.body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item .rc_img_section {
+.body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container .recommend_menu .rc_item .rc_img_section {
   width: 90px;
   height: 79px;
   border-radius: 30px;
@@ -161,14 +161,14 @@ li {
   margin-top: 40px;
   background-color: #fff;
 }
-.body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item .rc_img_section .rc_img {
+.body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container .recommend_menu .rc_item .rc_img_section .rc_img {
   width: 55px;
   height: 41px;
 }
-.body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item .rc_img_section .rc_img img {
+.body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container .recommend_menu .rc_item .rc_img_section .rc_img img {
   width: 100%;
 }
-.body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item .rc_item_title {
+.body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container .recommend_menu .rc_item .rc_item_title {
   margin-top: 16px;
   text-align: center;
   font-size: 15px;
@@ -270,23 +270,23 @@ li {
   display: flex;
   gap: 12px;
 }
-.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection {
+.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection_container .various_benefits_selection {
   margin-top: 40px;
   width: 948px;
   display: flex;
   justify-content: space-between;
   flex: 1;
 }
-.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection .various_benefits_item .various_benefits_img_section {
+.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection_container .various_benefits_selection .various_benefits_item .various_benefits_img_section {
   width: 303px;
   height: 139px;
   border-radius: 10px;
   overflow: hidden;
 }
-.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection .various_benefits_item .various_benefits_img_section img {
+.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection_container .various_benefits_selection .various_benefits_item .various_benefits_img_section img {
   width: 100%;
 }
-.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection .various_benefits_item .various_benefits_item_title {
+.body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection_container .various_benefits_selection .various_benefits_item .various_benefits_item_title {
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
@@ -424,7 +424,7 @@ li {
   display: flex;
   gap: 12px;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section_container .latest_product_news_items_section {
   margin-top: 39px;
   display: flex;
   width: 948px;
@@ -432,17 +432,17 @@ li {
   padding-left: 240px;
   box-sizing: border-box;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section .latest_product_news_item {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section_container .latest_product_news_items_section .latest_product_news_item {
   width: 223px;
   height: 277px;
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_img img {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section_container .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_img img {
   width: 100%;
 }
-.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_title {
+.body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section_container .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_title {
   font-size: 16px;
   font-weight: 500;
   padding-top: 15px;
@@ -469,7 +469,6 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 .body_contents .customer_support_section .customer_support_item {
   padding-top: 100px;
@@ -480,6 +479,9 @@ li {
 .body_contents .customer_support_section .customer_support_item .customer_support_section_title {
   font-size: 21px;
   font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .body_contents .customer_support_section .customer_support_item .customer_support_section_title .more_watching {
   font-size: 14px;
@@ -543,6 +545,9 @@ li {
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
+}
+.bottom .bottom_navigation .bottom_navigation_section .bottom_navigation_item_section .bottom_navigation_item .bottom_navigation_item_title img {
+  display: none;
 }
 .bottom .bottom_navigation .bottom_navigation_section .bottom_navigation_item_section .bottom_navigation_item .bottom_navigation_item_list {
   margin-top: 15px;

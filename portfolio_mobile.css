@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 600px) {
   .header {
     padding-top: 56px;
@@ -107,17 +108,20 @@
     font-size: 13px;
     gap: 5px;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu {
-    display: flex;
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container {
+    width: 100%;
+    overflow: auto;
+  }
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container .recommend_menu {
+    display: inline-flex;
     width: 100%;
     justify-content: space-between;
-    overflow: auto;
-    gap: 5px;
+    gap: 10px;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item {
-    width: 90px;
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container .recommend_menu .rc_item {
+    width: 61px;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item .rc_img_section {
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container .recommend_menu .rc_item .rc_img_section {
     width: 61px;
     height: 40px;
     border-radius: 20px;
@@ -128,26 +132,28 @@
     margin-top: 40px;
     background-color: #fff;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item .rc_img_section .rc_img {
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container .recommend_menu .rc_item .rc_img_section .rc_img {
     width: 34px;
     height: 26px;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item .rc_img_section .rc_img img {
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container .recommend_menu .rc_item .rc_img_section .rc_img img {
     width: 100%;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu .rc_item .rc_item_title {
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container .recommend_menu .rc_item .rc_item_title {
     margin-top: 3px;
     text-align: center;
     font-size: 11px;
     font-weight: 500;
+    color: #363636;
   }
-  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu::-webkit-scrollbar {
+  .body_contents .recommend .recommend_section .recommend_selection .recommend_menu_container::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin {
     width: 100%;
     flex-direction: column;
     gap: initial;
+    padding: initial;
   }
   .body_contents .recommend .recommend_section .recommend_selection .recommend_selection_item_sectioin .recommend_selection_item {
     height: initial;
@@ -257,20 +263,24 @@
     display: flex;
     gap: 12px;
   }
-  .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection {
+  .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection_container {
     width: 100%;
     overflow: auto;
+  }
+  .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection_container .various_benefits_selection {
+    width: 100%;
+    display: inline-flex;
     gap: 10px;
   }
-  .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection .various_benefits_item .various_benefits_img_section img {
+  .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection_container .various_benefits_selection .various_benefits_item .various_benefits_img_section img {
     width: 100%;
   }
-  .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection .various_benefits_item .various_benefits_item_title {
+  .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection_container .various_benefits_selection .various_benefits_item .various_benefits_item_title {
     font-size: 15px;
     line-height: 15px;
     margin-top: 15px;
   }
-  .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection::-webkit-scrollbar {
+  .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_selection_container::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
   .body_contents .various_benefits .various_benefits_section .various_benefits__container .various_benefits_bar_section {
@@ -365,7 +375,6 @@
   }
   .body_contents .LatestProductNews {
     padding: initial;
-    display: none;
   }
   .body_contents .LatestProductNews .latest_product_news_section {
     background-color: #E0EDF2;
@@ -385,28 +394,30 @@
     font-size: 13px;
     gap: 5px;
   }
-  .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section {
-    padding: initial;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    overflow: auto;
+  .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section_container {
+    width: 100%; /* 현재 보이는 화면 크기 전체를 의미 */
+    overflow: auto; /* 원래 크기를 보여지는 화면만큼만보여지게 하면서 아래 스크롤 생기는 거 */
   }
-  .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section .latest_product_news_item {
+  .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section_container .latest_product_news_items_section {
+    padding: initial; /* 패딩을 완전 초기화*/
+    width: 700px; /*여기 크기는 원래 크기대로 모두 유지해주도록 해야 한다. 원래 가로 223px * 3을 오게 할 수 있지만 박스 하나가 적어서 커지므로 일부러 그보다 작은 걸로 줄였다.*/
+    display: inline-flex; /*크기를 그 자체로 유지해주는 거*/
+    gap: 10px;
+  }
+  .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section_container .latest_product_news_items_section .latest_product_news_item {
     width: 223px;
     height: 277px;
     background-color: #fff;
     border-radius: 10px;
   }
-  .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_img {
+  .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section_container .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_img {
     width: 223px;
     height: initial;
   }
-  .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_img img {
+  .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section_container .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_img img {
     width: 100%;
   }
-  .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_title {
+  .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section_container .latest_product_news_items_section .latest_product_news_item .latest_product_news_item_title {
     font-size: 16px;
     font-weight: 500;
     line-height: 16px;
@@ -414,10 +425,12 @@
     /* padding-top: 18px; */
     padding-left: 20px;
   }
+  .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_news_items_section_container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
   .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_bar_section {
     margin-top: 40px;
     padding-left: initial;
-    display: none;
   }
   .body_contents .LatestProductNews .latest_product_news_section .latest_product_news_container .latest_product_bar_section .latest_product_whole_bar {
     width: 100%;
@@ -432,7 +445,6 @@
     border-radius: 30px;
   }
   .body_contents .customer_support_section {
-    display: none !important;
     padding: 50px 10px 50px;
     box-sizing: border-box;
   }
@@ -459,30 +471,32 @@
     width: 100%;
     background-color: #E9F0F3;
     display: block;
-    padding: initial;
+    padding: 20px 0 20px;
     text-align: center;
     box-shadow: 0px 4px 4px rgba(154, 142, 142, 0.25);
   }
+  .body_contents .customer_support_section .customer_support_item .customer_support_section_information_section .customer_support_information .customer_support_information_part {
+    padding-bottom: 10px;
+  }
+  .body_contents .customer_support_section .customer_support_item .customer_support_section_information_section .customer_support_asking {
+    flex: 1;
+  }
   .body_contents .customer_support_section .customer_support_item .customer_support_section_information_section .customer_support_asking .customer_support_asking_content {
     background-color: #E9F0F3;
-    width: 223px;
-    height: 33px;
+    width: initial;
+    height: initial;
     border-radius: 10px;
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     box-shadow: 0px 4px 4px rgba(154, 142, 142, 0.5);
   }
   .body_contents .customer_support_section .customer_support_item .customer_support_section_information_section .customer_support_asking .customer_support_asking_content:nth-child(1) {
     margin-top: 0px;
   }
-  .bottom {
-    display: none;
-  }
   .bottom .bottom_navigation {
     display: flex;
     justify-content: center;
+    padding: 0px 10px 50px;
   }
   .bottom .bottom_navigation .bottom_navigation_section {
     width: 948px;
@@ -495,15 +509,28 @@
   .bottom .bottom_navigation .bottom_navigation_section .bottom_navigation_item_section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     flex: 1;
+    padding-left: 16px;
   }
   .bottom .bottom_navigation .bottom_navigation_section .bottom_navigation_item_section .bottom_navigation_item .bottom_navigation_item_title {
-    font-size: 20px;
+    width: 100%;
+    font-size: 15px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 15px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #9A8E8E;
   }
   .bottom .bottom_navigation .bottom_navigation_section .bottom_navigation_item_section .bottom_navigation_item .bottom_navigation_item_list {
     margin-top: 15px;
+    display: none;
   }
   .bottom .bottom_navigation .bottom_navigation_section .bottom_navigation_item_section .bottom_navigation_item .bottom_navigation_item_list li {
     font-size: 16px;
@@ -529,8 +556,15 @@
   }
   .bottom .copyright .copyright_section .copyright_desc_list {
     margin-top: 16px;
-    display: flex;
-    gap: 39px;
+    display: block;
+    text-align: center;
+  }
+  .bottom .copyright .copyright_section .copyright_desc_list li {
+    margin-bottom: 5px;
+  }
+  .bottom .copyright .copyright_section .copyright_desc {
+    width: 80%;
+    text-align: center;
   }
   .bottom .copyright .copyright_section div {
     margin-top: 16px;
@@ -547,14 +581,13 @@
     font-size: 11px;
     font-weight: 500;
     line-height: 21px;
-    display: flex;
-    gap: 60px;
-    width: 948PX;
-    padding-top: 20px;
-    padding-bottom: 142px;
+    display: block;
+    width: 100%;
+    padding: initial;
     box-sizing: border-box;
   }
   .bottom .address .address_section .address_informtaion {
-    width: 276.33px;
+    width: 100%;
+    padding-bottom: 60px;
   }
 }/*# sourceMappingURL=portfolio_mobile.css.map */
