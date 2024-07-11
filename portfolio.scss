@@ -30,6 +30,9 @@ li {
         display: flex;
 
         // justify-content: center;
+        .iphon_upper_img{
+            display: none;
+        }
         .logo_section {
             margin-right: 20px;
         }
@@ -172,7 +175,7 @@ li {
         align-items: center;
         flex-direction: column;
         background-color: #E0EDF2;
-
+        margin-top: 65px;
         .recommend_section {
 
 
@@ -193,7 +196,7 @@ li {
                         font-weight: 500;
                         color: #989898;
                         display: flex;
-                        gap: 12px;
+                        gap: 7px;
                     }
                 }
                 .recommend_menu_container{
@@ -226,7 +229,9 @@ li {
 
                                 }
                             }
-
+                            .rc_img_section:hover{
+                                background-color: #98d8f1;
+                            }
                             .rc_item_title {
                                 margin-top: 16px;
                                 text-align: center;
@@ -246,11 +251,9 @@ li {
 
                     .recommend_selection_item {
                         width: 222px;
-                        height: 344px;
+                        // height: 344px;
                         background-color: #fff;
-                        padding-top: 10px;
-                        padding-left: 10px;
-                        padding-right: 10px;
+                        padding: 15px 20px 30px;
                         box-sizing: border-box;
                         border-radius: 10px;
 
@@ -276,13 +279,22 @@ li {
                             .rc_selection_contents {
 
                                 .rc_selection_contents_title {
-                                    font-size: 11px;
-                                    font-weight: 900;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    margin-top: 10px;
+                                }
+
+                                .rc_selection_contents_title_model_name{
+                                    margin-top: 11px;
+                                    font-size: 12px;
+                                    line-height: 12px;
+                                    font-weight: 500; 
+                                    color: #767676;
                                 }
 
                                 .rc_selection_contents_content {
                                     margin-top: 11px;
-                                    font-size: 8px;
+                                    font-size: 12px;
                                     font-weight: 500;
                                 }
 
@@ -290,16 +302,18 @@ li {
                                     margin-top: 11px;
                                     display: flex;
                                     gap: 5px;
-
+                                    color: #FF0000;
+                                    font-size: 13px;
+                                    line-height: 13px;
                                     .rc_selection_contents_price_percent {
 
-                                        font-size: 13px;
+                                        
                                         font-weight: 500;
                                     }
 
                                     .rc_selection_contents_price {
 
-                                        font-size: 13px;
+                                        
                                         font-weight: 900;
                                     }
                                 }
@@ -307,7 +321,9 @@ li {
                         }
                     }
                 }
-
+                .recommend_selection_item:nth-child(5){
+                    display: none;
+                }
                 .rc_bar_section {
                     display: block;
                     margin-top: 25px;
@@ -364,7 +380,7 @@ li {
                         font-weight: 500;
                         color: #989898;
                         display: flex;
-                        gap: 12px;
+                        gap: 7px;
                     }
                 }
                 .various_benefits_selection_container{
@@ -466,7 +482,7 @@ li {
                     font-weight: 500;
                     color: #989898;
                     display: flex;
-                    gap: 12px;
+                    gap: 7px;
                 }
             }
 
@@ -499,11 +515,13 @@ li {
                         padding-bottom: 30px;
                         box-sizing: border-box;
                         border-radius: 10px;
-                        box-shadow: 5px 5px 8.5px #E0EDF2;
+                        box-shadow: 0px 0px 10px #E0EDF2;
 
                         .promotion_img_item_right_img {
                             width: 150px;
-
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             img {
                                 width: 100%;
                             }
@@ -533,6 +551,7 @@ li {
                                 font-size: 12px;
                                 font-weight: 500;
                                 line-height: 26px;
+                                color: #FF0000;
                             }
 
                             .pr_i_con_sale_price {
@@ -573,7 +592,7 @@ li {
                         font-weight: 500;
                         color: #989898;
                         display: flex;
-                        gap: 12px;
+                        gap: 7px;
                     }
                 }
                 .latest_product_news_items_section_container{
@@ -671,7 +690,7 @@ li {
                     font-weight: 500;
                     color: #989898;
                     display: flex;
-                    gap: 12px;
+                    gap: 7px;
                 }
             }
 
@@ -712,7 +731,7 @@ li {
                         justify-content: center;
                         align-items: center;
                         box-shadow: 0px 4px 4px rgba($color: #9A8E8E, $alpha: 0.5);
-
+                        border: none;
                     }
 
                     .customer_support_asking_content:nth-child(1) {
