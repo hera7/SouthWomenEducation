@@ -95,6 +95,7 @@
   .body_contents .recommend {
     display: block;
     background-color: initial;
+    margin-top: initial;
   }
   .body_contents .recommend .recommend_section {
     padding: 50px 10px 50px;
