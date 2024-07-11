@@ -1,11 +1,16 @@
 @media (max-width: 600px) {
 
     .header {
-        padding-top: 56px;
-        display: flex;
-        justify-content: center;
-        box-sizing: border-box;
-
+        padding-top: initial;
+        display: block;
+        
+        .iphon_upper_img {
+            display: block;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
         .header_container {
             // width: 370px;
             width: 100%;
@@ -16,15 +21,12 @@
 
             // overflow: auto; (넘쳐 흐르는 거 안보이게 하는 거)
             // width: 360px;
-            .iphon_upper_img {
-                display: none;
-                // width: 100%;
-            }
+            
 
             .logo_section {
                 position: absolute;
                 top: 10px;
-                left: 10px;
+                left: 20px;
                 width: 29px;
                 height: 29px;
 
@@ -35,7 +37,8 @@
             }
 
             .search_section {
-
+                padding: 0 10px;
+                margin-bottom: 15px;
                 .search_info {
                     width: 100%;
                     height: 49px;
@@ -52,10 +55,11 @@
                     }
 
                     .glasses_section {
-                        width: 45px;
-                        height: 20px;
+                        width: 38px;
+                        // height: 20px;
                         padding-top: initial;
-
+                        padding-right: 15px;
+                        box-sizing: border-box;
                         img {
                             width: 100%;
                         }

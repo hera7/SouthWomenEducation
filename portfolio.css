@@ -29,12 +29,12 @@ button {
   flex-direction: column;
   position: relative;
 }
+.header .iphon_upper_img {
+  display: none;
+}
 .header .header_container {
   width: 948px;
   display: flex;
-}
-.header .header_container .iphon_upper_img {
-  display: none;
 }
 .header .header_container .logo_section {
   margin-right: 20px;

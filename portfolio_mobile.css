@@ -1,27 +1,33 @@
 @charset "UTF-8";
 @media (max-width: 600px) {
   .header {
-    padding-top: 56px;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
+    padding-top: initial;
+    display: block;
+  }
+  .header .iphon_upper_img {
+    display: block;
+    width: 100%;
+  }
+  .header .iphon_upper_img img {
+    width: 100%;
   }
   .header .header_container {
     width: 100%;
     position: relative;
   }
-  .header .header_container .iphon_upper_img {
-    display: none;
-  }
   .header .header_container .logo_section {
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 20px;
     width: 29px;
     height: 29px;
   }
   .header .header_container .logo_section img {
     width: 100%;
+  }
+  .header .header_container .search_section {
+    padding: 0 10px;
+    margin-bottom: 15px;
   }
   .header .header_container .search_section .search_info {
     width: 100%;
@@ -37,9 +43,10 @@
     box-sizing: border-box;
   }
   .header .header_container .search_section .search_info .glasses_section {
-    width: 45px;
-    height: 20px;
+    width: 38px;
     padding-top: initial;
+    padding-right: 15px;
+    box-sizing: border-box;
   }
   .header .header_container .search_section .search_info .glasses_section img {
     width: 100%;
