@@ -2,7 +2,8 @@ body {
     font-family: "Inter", "Noto Sans KR", sans-serif;
     margin: 0px;
     padding: 0px;
-
+    text-rendering: optimizeLegibility;/* 홈페이지에 뿌릴 때 0.01초라도 빨리 해주고, 예쁘게 표현해주는 설정*/
+    -webkit-font-smoothing: antialiased;
 }
 
 ul,
@@ -11,7 +12,11 @@ li {
     margin: 0px;
     padding: 0px;
 }
-
+button{
+    font-family: "Inter", "Noto Sans KR", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
 .header {
     padding-top: 20px;
     // padding-left: 244px;
@@ -491,21 +496,22 @@ li {
                 justify-content: space-between;
                 margin-top: 40px;
                 width: 948px;
-
-                .promotion_img_item {
+                gap: 10.75px;
+                .promotion_img_item_left {
                     // width: 465.5px;
                     width: 50%;
                     border-radius: 10px;
-
+                    overflow: hidden;
                     img {
                         width: 100%;
-                        
+                        display: block;
                     }
 
                 }
 
-                .promotion_img_item {
-                    .promotion_img_item_right {
+                .promotion_img_item_right {
+
+                    .promotion_img_item {
                         display: flex;
                         gap: 30px;
                         height: 175px;
@@ -515,10 +521,11 @@ li {
                         padding-bottom: 30px;
                         box-sizing: border-box;
                         border-radius: 10px;
-                        box-shadow: 0px 0px 10px #E0EDF2;
-
+                        // box-shadow: 0px 0px 10px #E0EDF2;
+                        border: 1px solid #E7E7E7;
+                        
                         .promotion_img_item_right_img {
-                            width: 150px;
+                            width: 130px;
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -532,19 +539,21 @@ li {
                         img {}
 
                         .promotion_item_contents {
-                            text-align: right;
+                            text-align: left;
 
                             .pr_i_con_title {
                                 font-size: 16px;
                                 font-weight: 700;
                                 line-height: 26px;
                                 letter-spacing: -0.25px;
+                                margin-top: 10px;
                             }
 
                             .pr_i_con_original_price {
                                 font-size: 15px;
                                 font-weight: 500;
                                 line-height: 26px;
+                                display: none;
                             }
 
                             .pr_i_con_sale_rate {
@@ -552,6 +561,7 @@ li {
                                 font-weight: 500;
                                 line-height: 26px;
                                 color: #FF0000;
+                                margin-top: 15px;
                             }
 
                             .pr_i_con_sale_price {
@@ -562,6 +572,10 @@ li {
 
                             }
                         }
+                    }
+                    .promotion_img_item:nth-child(2){
+                        margin-top: 10.75px;
+                        
                     }
                 }
 
@@ -711,7 +725,7 @@ li {
                     padding-left: 45px;
                     padding-right: 45px;
                     border-radius: 10px;
-                    box-shadow: 0px 4px 4px rgba($color: #9A8E8E, $alpha: 0.25);
+                    // box-shadow: 0px 4px 4px rgba($color: #9A8E8E, $alpha: 0.25);
 
                     .customer_support_information_part {
 
@@ -730,12 +744,16 @@ li {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        box-shadow: 0px 4px 4px rgba($color: #9A8E8E, $alpha: 0.5);
+                        // box-shadow: 0px 4px 4px rgba($color: #9A8E8E, $alpha: 0.5);
                         border: none;
                     }
 
                     .customer_support_asking_content:nth-child(1) {
                         margin-top: 0px;
+                    }
+
+                    .customer_support_asking_content:hover{
+                        background-color: #92d0eb;
                     }
                 }
             }

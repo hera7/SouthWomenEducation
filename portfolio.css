@@ -1,12 +1,21 @@
+@charset "UTF-8";
 body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
   margin: 0px;
   padding: 0px;
+  text-rendering: optimizeLegibility; /* 홈페이지에 뿌릴 때 0.01초라도 빨리 해주고, 예쁘게 표현해주는 설정*/
+  -webkit-font-smoothing: antialiased;
 }
 
 ul,
 li {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  font-family: "Inter", "Noto Sans KR", sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -367,15 +376,18 @@ li {
   justify-content: space-between;
   margin-top: 40px;
   width: 948px;
+  gap: 10.75px;
 }
-.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item {
+.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item_left {
   width: 50%;
   border-radius: 10px;
+  overflow: hidden;
 }
-.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item img {
+.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item_left img {
   width: 100%;
+  display: block;
 }
-.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item .promotion_img_item_right {
+.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item_right .promotion_img_item {
   display: flex;
   gap: 30px;
   height: 175px;
@@ -385,42 +397,48 @@ li {
   padding-bottom: 30px;
   box-sizing: border-box;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px #E0EDF2;
+  border: 1px solid #E7E7E7;
 }
-.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item .promotion_img_item_right .promotion_img_item_right_img {
-  width: 150px;
+.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item_right .promotion_img_item .promotion_img_item_right_img {
+  width: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item .promotion_img_item_right .promotion_img_item_right_img img {
+.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item_right .promotion_img_item .promotion_img_item_right_img img {
   width: 100%;
 }
-.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item .promotion_img_item_right .promotion_item_contents {
-  text-align: right;
+.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item_right .promotion_img_item .promotion_item_contents {
+  text-align: left;
 }
-.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item .promotion_img_item_right .promotion_item_contents .pr_i_con_title {
+.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item_right .promotion_img_item .promotion_item_contents .pr_i_con_title {
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: -0.25px;
+  margin-top: 10px;
 }
-.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item .promotion_img_item_right .promotion_item_contents .pr_i_con_original_price {
+.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item_right .promotion_img_item .promotion_item_contents .pr_i_con_original_price {
   font-size: 15px;
   font-weight: 500;
   line-height: 26px;
+  display: none;
 }
-.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item .promotion_img_item_right .promotion_item_contents .pr_i_con_sale_rate {
+.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item_right .promotion_img_item .promotion_item_contents .pr_i_con_sale_rate {
   font-size: 12px;
   font-weight: 500;
   line-height: 26px;
   color: #FF0000;
+  margin-top: 15px;
 }
-.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item .promotion_img_item_right .promotion_item_contents .pr_i_con_sale_price {
+.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item_right .promotion_img_item .promotion_item_contents .pr_i_con_sale_price {
   font-size: 16px;
   font-weight: 800;
   line-height: 26px;
   color: #FF0000;
+}
+.body_contents .Promotion .promotion_section .promotion_img_section .promotion_img_item_right .promotion_img_item:nth-child(2) {
+  margin-top: 10.75px;
 }
 .body_contents .LatestProductNews {
   display: flex;
@@ -527,7 +545,6 @@ li {
   padding-left: 45px;
   padding-right: 45px;
   border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(154, 142, 142, 0.25);
 }
 .body_contents .customer_support_section .customer_support_item .customer_support_section_information_section .customer_support_asking .customer_support_asking_content {
   background-color: #E9F0F3;
@@ -538,11 +555,13 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 4px 4px rgba(154, 142, 142, 0.5);
   border: none;
 }
 .body_contents .customer_support_section .customer_support_item .customer_support_section_information_section .customer_support_asking .customer_support_asking_content:nth-child(1) {
   margin-top: 0px;
+}
+.body_contents .customer_support_section .customer_support_item .customer_support_section_information_section .customer_support_asking .customer_support_asking_content:hover {
+  background-color: #92d0eb;
 }
 
 .bottom .bottom_navigation {
