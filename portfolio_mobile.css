@@ -7,7 +7,7 @@
     box-sizing: border-box;
   }
   .header .header_container {
-    width: 370px;
+    width: 100%;
     position: relative;
   }
   .header .header_container .iphon_upper_img {
